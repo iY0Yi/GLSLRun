@@ -5,11 +5,11 @@ Pull requests are welcome :)</br>
 </br>
 
 
-# Dependencies
+## Dependencies
 [Codemirror](https://github.com/codemirror/CodeMirror)</br>
 [glsl-transpiler](https://github.com/stackgl/glsl-transpiler)</br>
 </br>
 
-# Contact
+## Contact
 [iY0Yi](https://twitter.com/iY0Yi/)</br>
 </br>
