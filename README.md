@@ -6,6 +6,12 @@ Pull requests are welcome :)</br>
 </br>
 
 
+## Usage
+- ```npm install```
+- ```node app.js```
+- access: http://localhost:3000/</br>
+</br>
+
 ## Dependencies
 [Codemirror](https://github.com/codemirror/CodeMirror)</br>
 [glsl-transpiler](https://github.com/stackgl/glsl-transpiler)</br>
