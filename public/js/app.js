@@ -1,10 +1,21 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    const swizzles = [
-        'x', 'y', 'z', 'w',
-        'xx', 'xy', 'xz', 'xw',
-        // ... (省略) ...
-        'wwwx', 'wwwy', 'wwwz', 'wwww',
-    ];
+    function generateSwizzles(maxLength, current = '', swizzles = []) {
+        const components = ['x', 'y', 'z'];
+
+        if (current.length >= maxLength) {
+            return swizzles;
+        }
+
+        for (let component of components) {
+            let newSwizzle = current + component;
+            swizzles.push(newSwizzle);
+            generateSwizzles(maxLength, newSwizzle, swizzles);
+        }
+
+        return swizzles;
+    }
+
+    const swizzles = generateSwizzles(4);
 
     for (let swizzle of swizzles) {
         Object.defineProperty(Array.prototype, swizzle, {
@@ -14,7 +25,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
                         case 'x': return this[0];
                         case 'y': return this[1];
                         case 'z': return this[2];
-                        case 'w': return this[3];
                         default: return undefined;
                     }
                 });
