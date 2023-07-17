@@ -1,6 +1,6 @@
 # GLSLRun
 GLSLRun is a tool that allows you to insert print() into short GLSL code for debugging.
-But this is under developing.
+But this is under development.
 Pull requests are welcome :)</br>
 </br>
 
