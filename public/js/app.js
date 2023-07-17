@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
     function generateSwizzles(maxLength, current = '', swizzles = []) {
-        const components = ['x', 'y', 'z'];
+        const components = ['x', 'y', 'z', 'w'];
 
         if (current.length >= maxLength) {
             return swizzles;
@@ -45,6 +45,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                         case 'x': return this[0];
                         case 'y': return this[1];
                         case 'z': return this[2];
+                        case 'w': return this[3];
                         default: return undefined;
                     }
                 });
@@ -59,22 +60,22 @@ window.addEventListener('DOMContentLoaded', (event) => {
         theme: "gruvbox-dark",
         fontSize: '20pt',
         cursorBlinkRate: 530,
-            smartIndent: true,
-            indentWithTabs: false,
-            indentUnit: 4,
-            showInvisibles: true,
-            maxInvisibles: 16,
-            keyMap: 'sublime',
-            styleActiveLine: true,
-            styleSelectedText: true,
-            styleCursor: true,
-            autoCloseBrackets: false,
-            matchBrackets: true,
-            showCursorWhenSelecting: true,
-            selectionPointer: true,
-            autofocus: true,
-            continuousScanning: 500,
-            foldGutter: true
+        smartIndent: true,
+        indentWithTabs: false,
+        indentUnit: 4,
+        showInvisibles: true,
+        maxInvisibles: 16,
+        keyMap: 'sublime',
+        styleActiveLine: true,
+        styleSelectedText: true,
+        styleCursor: true,
+        autoCloseBrackets: false,
+        matchBrackets: true,
+        showCursorWhenSelecting: true,
+        selectionPointer: true,
+        autofocus: true,
+        continuousScanning: 500,
+        foldGutter: true
     });
     glslEditor.setSize(null, '600px');
 
