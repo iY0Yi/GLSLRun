@@ -1,4 +1,24 @@
 window.addEventListener('DOMContentLoaded', (event) => {
+    OS = null;
+    function detectOS() {
+        // Detect your OS.
+        OS = 'Android' // default
+        const ua = navigator.userAgent;
+        if (ua.indexOf('Windows') > -1) OS = 'Windows'
+        else if (ua.indexOf('iPhone') > -1) OS = 'iOS'
+        else if (ua.indexOf('iPad') > -1) OS = 'iPadOS'
+        else if (ua.indexOf('Mac') > -1){
+            if(!('ontouchend' in document)) OS = 'MacOS'
+            else OS = 'iPadOS'
+        }
+        else if (ua.indexOf('X11') > -1) OS = 'UNIX'
+        else if (ua.indexOf('Linux') > -1) OS = 'Linux'
+        else if (ua.indexOf('Android') > -1) OS = 'Android'
+
+        console.log('OS: ', OS)
+    }
+
+
     function generateSwizzles(maxLength, current = '', swizzles = []) {
         const components = ['x', 'y', 'z'];
 
@@ -43,6 +63,19 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
     glslEditor.setSize(null, '600px');
 
+    // Adjust the editor's height
+    const adjustEditorHeight = () => {
+        const footerHeight = document.getElementById('footer').offsetHeight;
+        const windowHeight = window.innerHeight;
+        glslEditor.setSize(null, `${windowHeight - footerHeight}px`);
+    };
+
+    // Initial adjustment
+    adjustEditorHeight();
+
+    // Adjust the editor's height whenever the window is resized
+    window.addEventListener('resize', adjustEditorHeight);
+
     const txtAnsw = document.getElementById('txtAnsw');
     const btnRun = document.getElementById('btnRun');
 
@@ -53,7 +86,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         txtAnsw.value += str + "\n";
     };
 
-    btnRun.addEventListener('click', () => {
+    const run = () => {
         let glslCode = glslEditor.getValue();
         let glslLines = glslCode.split('\n');
         let printLines = {};
@@ -98,5 +131,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
         .catch((error) => {
             console.error('Error:', error);
         });
-    });
+    };
+
+    btnRun.addEventListener('click', run);
+
+    key.filter = function(event){return true;}
+    key('⌥+enter', run)
+    key.setScope('default');
 });
