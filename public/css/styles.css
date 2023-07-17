@@ -9,7 +9,6 @@ body {
 #glslEditor{
     background-color: #3c3836;
     font-family: 'Overpass Mono', monospace;
-    font-weight: 400;
     color: #bdae93;
     border: none;
     width: 100%;
@@ -19,7 +18,7 @@ body {
 
 .CodeMirror-lines{
     font-family: 'Overpass Mono', monospace;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .CodeMirror-vscrollbar {

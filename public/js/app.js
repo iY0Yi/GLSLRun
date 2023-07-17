@@ -55,11 +55,26 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const glslEditor = CodeMirror(document.getElementById('glslEditor'), {
         lineNumbers: true,
         matchBrackets: true,
-        mode: "text/x-csrc",
+        mode: 'x-shader/x-fragment',
         theme: "gruvbox-dark",
-        indentUnit: 4,
-        indentWithTabs: true,
-        fontSize: '20pt'
+        fontSize: '20pt',
+        cursorBlinkRate: 530,
+            smartIndent: true,
+            indentWithTabs: false,
+            indentUnit: 4,
+            showInvisibles: true,
+            maxInvisibles: 16,
+            keyMap: 'sublime',
+            styleActiveLine: true,
+            styleSelectedText: true,
+            styleCursor: true,
+            autoCloseBrackets: false,
+            matchBrackets: true,
+            showCursorWhenSelecting: true,
+            selectionPointer: true,
+            autofocus: true,
+            continuousScanning: 500,
+            foldGutter: true
     });
     glslEditor.setSize(null, '600px');
 
