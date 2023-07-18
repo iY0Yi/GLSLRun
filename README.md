@@ -6,11 +6,13 @@ But this is under development.
 Pull requests are welcome :)</br>
 </br>
 
+## App
+http://glslrun.xyz/
 
-## Usage
+## Development
 - ```npm install```
-- ```node app.js```
-- access: http://localhost:3000/</br>
+- ```npm run start```
+- access: http://localhost:8080/</br>
 </br>
 
 ## Dependencies
