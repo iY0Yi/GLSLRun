@@ -1,21 +1,14 @@
 body {
-    background-color: #282828;
+    background-color: #3c3836;
     color: #bdae93;
     font-family: 'Mulish', sans-serif;
-    font-weight: 600;
     margin: 0px;
+    width: 100vw;
 }
 
-#glslEditor{
-    background-color: #3c3836;
-    font-family: 'Overpass Mono', monospace;
-    color: #bdae93;
-    border: none;
-    width: 100%;
-    height: 600px;
-    font-size: 12pt;
+.CodeMirror{
+    font-size: 13pt;
 }
-
 .CodeMirror-lines{
     font-family: 'Overpass Mono', monospace;
     font-weight: 300;
@@ -26,30 +19,26 @@ body {
 }
 
 #footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
     bottom: 0;
-    width: 100%;
-    background-color: #282828;  /* gruvbox dark background */
+    width: 100vw;
+    height: 300px;
     color: #bdae93;  /* gruvbox light foreground */
-    padding: 10px;
+    overflow: hidden;
 }
 
 #txtAnsw {
     font-family: 'Overpass Mono', monospace;
     font-weight: 400;
     background-color: #3c3836;
-    border-radius: 2px;
+    border-radius: 0px;
     color: #bdae93;
     border: none;
-    margin: 10px;
-    padding: 10px 16px;
-    width: 100%;
-    height: 200px;
-    font-size: 12pt;
+    margin: 0px;
+    padding: 10px 10px;
+    width: calc(100% - 20px);
+    padding-bottom: 0px;
+    height: calc(100% - 10px);
+    font-size: 13pt;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -61,26 +50,21 @@ body {
 #glslEditor::placeholder, #txtAnsw::placeholder {
     color: #928374;
 }
-#buttonContainer {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-}
 
 #btnRun {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
     background-color: #8ec07c;
-    margin: 0px 14px;
-    margin-bottom: 8px;
-    margin-right: 22px;
     color: #282828;
     border: none;
     cursor: pointer;
     padding: 10px 20px 12px 20px;
     border-radius: 30px;
-    font-size: 13pt;
-    font-weight: 800;
+    font-size: 12pt;
+    font-weight: 600;
     text-align: center;
-    width: 80px;
+    width: 60px;
     user-select: none;
 }
 
