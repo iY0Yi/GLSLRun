@@ -22,16 +22,16 @@ body {
     bottom: 0;
     width: 100vw;
     height: 300px;
-    color: #bdae93;  /* gruvbox light foreground */
+    color: #131614;  /* gruvbox light foreground */
     overflow: hidden;
 }
 
 #txtAnsw {
     font-family: 'Overpass Mono', monospace;
     font-weight: 400;
-    background-color: #3c3836;
+    background-color: #002b16;
     border-radius: 0px;
-    color: #bdae93;
+    color: #00b600;
     border: none;
     margin: 0px;
     padding: 10px 10px;
@@ -47,15 +47,11 @@ body {
     display: none;
 }
 
-#glslEditor::placeholder, #txtAnsw::placeholder {
-    color: #928374;
-}
-
 #btnRun {
     position: absolute;
     right: 20px;
     bottom: 20px;
-    background-color: #8ec07c;
+    background-color: #00ff00;
     color: #282828;
     border: none;
     cursor: pointer;
@@ -69,5 +65,5 @@ body {
 }
 
 #btnRun:hover {
-    background-color: #b8bb26;
+    background-color: #32ff3d;
 }

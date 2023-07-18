@@ -1,0 +1,38 @@
+/*
+
+    Name:       glslrun-dark
+    Author:     iY0Yi (https://github.com/krkk)
+    Original glslrun color scheme by iY0Yi
+
+*/
+
+.cm-s-glslrun-dark.CodeMirror, .cm-s-glslrun-dark .CodeMirror-gutters { background-color: #001700; color: #14b114; }
+.cm-s-glslrun-dark .CodeMirror-gutters {background: #001700; border-right: 0px;}
+.cm-s-glslrun-dark .CodeMirror-linenumber {color: #005c00;}
+.cm-s-glslrun-dark .CodeMirror-cursor { border-left: 1px solid #00ff00; }
+.cm-s-glslrun-dark.cm-fat-cursor .CodeMirror-cursor { background-color: #8e8d8875 !important; }
+.cm-s-glslrun-dark .cm-animate-fat-cursor { background-color: #8e8d8875 !important; }
+.cm-s-glslrun-dark div.CodeMirror-selected { background: #007b00; }
+.cm-s-glslrun-dark span.cm-meta { color: #83a598; }
+
+.cm-s-glslrun-dark span.cm-comment { color: #007700; }
+.cm-s-glslrun-dark span.cm-number, span.cm-atom { color: #d2ffdf; }
+.cm-s-glslrun-dark span.cm-keyword { color: #00ff00; }
+
+.cm-s-glslrun-dark span.cm-variable { color: #b2ebdd; }
+.cm-s-glslrun-dark span.cm-variable-2 { color: #b2ebdd; }
+.cm-s-glslrun-dark span.cm-variable-3, .cm-s-glslrun-dark span.cm-type { color: #00ffbb; }
+.cm-s-glslrun-dark span.cm-operator { color: #b2ebe4; }
+.cm-s-glslrun-dark span.cm-callee { color: #b2ebc1; }
+.cm-s-glslrun-dark span.cm-def { color: #b2ebb6; }
+.cm-s-glslrun-dark span.cm-property { color: #b2ebbb; }
+.cm-s-glslrun-dark span.cm-string { color: #7acdbd; }
+.cm-s-glslrun-dark span.cm-string-2 { color: #8ec07c; }
+.cm-s-glslrun-dark span.cm-qualifier { color: #8ec07c; }
+.cm-s-glslrun-dark span.cm-attribute { color: #8ec07c; }
+
+.cm-s-glslrun-dark .CodeMirror-activeline-background { background: #112510; }
+.cm-s-glslrun-dark .CodeMirror-matchingbracket { background: #928374; color:#092411 !important; }
+
+.cm-s-glslrun-dark span.cm-builtin { color: #00ff00; }
+.cm-s-glslrun-dark span.cm-tag { color: #00ff00; }

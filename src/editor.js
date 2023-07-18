@@ -9,7 +9,7 @@ export let Editor = {
             lineNumbers: true,
             matchBrackets: true,
             mode: 'x-shader/x-fragment',
-            theme: "gruvbox-dark",
+            theme: "glslrun-dark",
             fontSize: '26pt',
             cursorBlinkRate: 530,
             smartIndent: true,
