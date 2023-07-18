@@ -1,5 +1,5 @@
 # GLSLRun
-<img src="https://github.com/iY0Yi/GLSLRun/blob/main/dist/assets/og.jpg"></br>
+<img src="https://github.com/iY0Yi/GLSLRun/blob/main/dist/assets/og2.jpg"></br>
 <img src="https://github.com/iY0Yi/GLSLRun/blob/main/dist/assets/kv.jpg"></br>
 GLSLRun is a tool that allows you to insert print() into short GLSL code for debugging.
 But this is under development.
