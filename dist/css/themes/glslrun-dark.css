@@ -32,7 +32,7 @@
 .cm-s-glslrun-dark span.cm-attribute { color: #8ec07c; }
 
 .cm-s-glslrun-dark .CodeMirror-activeline-background { background: #112510; }
-.cm-s-glslrun-dark .CodeMirror-matchingbracket { background: #928374; color:#092411 !important; }
+.cm-s-glslrun-dark .CodeMirror-matchingbracket { background: #006a38; color:#092411 !important; }
 
 .cm-s-glslrun-dark span.cm-builtin { color: #00ff00; }
 .cm-s-glslrun-dark span.cm-tag { color: #00ff00; }

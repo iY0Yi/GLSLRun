@@ -35,8 +35,7 @@ for(float i=0.; i<200.; i++){
     float a = i/200.*PI;
     vec2 v = vec2(sin(a), cos(a));
     print(v);
-}
-        `)
+}`)
 
         // Adjust the editor's height
         function adjustEditorHeight(){
