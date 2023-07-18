@@ -7,7 +7,7 @@ Pull requests are welcome :)</br>
 </br>
 
 ## App
-http://glslrun.xyz/
+https://glslrun.xyz/
 
 ## Development
 - ```npm install```
