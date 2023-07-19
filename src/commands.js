@@ -35,16 +35,23 @@ export let Commands = {
         transpiledJsCode = transpiledJsLines.join('\n')
 
         // Try to evaluate the transpiled JavaScript code
+        let span = document.createElement('span')
         try {
             eval(transpiledJsCode)
+            span.textContent = '\n'
         } catch (error) {
-            console.error(error)
-            const txtAnsw = document.getElementById('txtAnsw')
-            txtAnsw.value = 'Error in evaluating JavaScript code: ' + error.message
-            txtAnsw.value += '\n'
-            txtAnsw.value += '\n--------------------------------'
-            txtAnsw.value += transpiledJsCode
-            txtAnsw.value += '\n--------------------------------'
+            let str = 'Error in transpiling GLSL to JavaScript:\n  ' + error.message + '\n'
+            str += '  '+transpiledJsCode.replace('Error in transpiling GLSL to JavaScript: ', '') + '\n\n'
+            console.error(str)
+            span.id = 'errorText'
+            span.textContent = str
         }
+        txtAnsw.appendChild(span)
+        Commands.autoScroll()
+    },
+
+    autoScroll: function(){
+        const txtAnsw = document.getElementById('txtAnsw')
+        txtAnsw.scrollTop = txtAnsw.scrollHeight
     }
 }
