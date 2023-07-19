@@ -47,6 +47,10 @@ body {
     display: none;
 }
 
+#errorText{
+    color: #d81d00;
+}
+
 #btnRun {
     position: absolute;
     right: 20px;
