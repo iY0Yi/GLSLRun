@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head prefix="og:http://ogp.me/ns#">
     <meta charset="UTF-8">
 	<!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
@@ -16,16 +16,21 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./fv/favicon-16x16.png">
     <link rel="manifest" href="./fv/site.webmanifest">
     <link rel="mask-icon" href="./fv/safari-pinned-tab.svg" color="#00ff00">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-TileColor" content="#001700">
+    <meta name="theme-color" content="#001700">
 
-	<meta property="og:image:width" content="1200">
-	<meta property="og:image:height" content="630">
-	<meta property="og:description" content="GLSLRun is a tool that allows you to insert print() into short GLSL code for debugging.">
-	<meta property="og:title" content="GLSLRun">
-	<meta property="og:url" content="https://glslrun.xyz/">
-	<meta property="og:image" content="https://glslrun.xyz/assets/og.jpg">
-	<meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://www.glslrun.xyz/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GLSLRun">
+    <meta property="og:description" content="GLSLRun is a tool that allows you to insert print() into short GLSL code for debugging.">
+    <meta property="og:image" content="https://glslrun.xyz/assets/og.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="glslrun.xyz">
+    <meta property="twitter:url" content="https://www.glslrun.xyz/">
+    <meta name="twitter:title" content="GLSLRun">
+    <meta name="twitter:description" content="GLSLRun is a tool that allows you to insert print() into short GLSL code for debugging.">
+    <meta name="twitter:image" content="https://glslrun.xyz/assets/og.jpg">
 	<meta name="twitter:site" content="@iy0yi">
 	<meta name="twitter:player" content="@iy0yi">
 
@@ -43,7 +48,7 @@
 <body>
     <div id="glslEditor"></div>
     <div id="footer">
-        <textarea id="txtAnsw"></textarea>
+        <div id="txtAnsw" style="white-space: pre-wrap;"></div>
         <div id="btnRun">Run</div>
     </div>
     <script src="main.js"></script>
